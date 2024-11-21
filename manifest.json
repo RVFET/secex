@@ -1,0 +1,26 @@
+{
+  "name": "Secex by RVFET",
+  "description": "Chromoium extension that removes common tracked data from websites.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

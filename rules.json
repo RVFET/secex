@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "x-amzn-trace-id",
+          "operation": "remove"
+        },
+        {
+          "header": "sec-ch-ua",
+          "operation": "set",
+          "value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\""
+        },
+        {
+          "header": "sec-ch-mobile",
+          "operation": "set",
+          "value": "?0"
+        },
+        {
+          "header": "sec-ch-ua-platform",
+          "operation": "set",
+          "value": "\"Windows\""
+        },
+        {
+          "header": "sec-ch-ua-arch",
+          "operation": "set",
+          "value": "\"x86\""
+        },
+        {
+          "header": "sec-ch-ua-full-version",
+          "operation": "set",
+          "value": "\"99\""
+        },
+        {
+          "header": "sec-ch-ua-platform-version",
+          "operation": "set",
+          "value": "\"10.0.19041\""
+        },
+        {
+          "header": "sec-ch-ua-model",
+          "operation": "set",
+          "value": "\"\""
+        },
+        {
+          "header": "sec-ch-ua-full-version-list",
+          "operation": "set",
+          "value": "Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4750.0\", \"Google Chrome\";v=\"98.0.4750.0"
+        },
+        {
+          "header": "user-agent",
+          "operation": "set",
+          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4750.0 Safari/537.36 Edg/98.0.4750.0"
+        },
+        {
+          "header": "x-forwarded-for",
+          "operation": "set",
+          "value": "127.0.0.1"
+        },
+        {
+          "header": "x-real-ip",
+          "operation": "set",
+          "value": "127.0.0.1"
+        },
+        {
+          "header": "forwarded",
+          "operation": "set",
+          "value": "for=127.0.0.1"
+        },
+        {
+          "header": "x-original-forwarded-for",
+          "operation": "set",
+          "value": "127.0.0.1"
+        },
+        {
+          "header": "x-original-real-ip",
+          "operation": "set",
+          "value": "127.0.0.1"
+        },
+        {
+          "header": "x-forwarded-proto",
+          "operation": "set",
+          "value": "javascript:"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "|http*",
+      "resourceTypes": [
+        "script",
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  }
+]
